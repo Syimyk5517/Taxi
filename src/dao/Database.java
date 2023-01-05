@@ -19,6 +19,11 @@ public class Database {
         this.taxis = taxis;
     }
 
+    public Database() {
+
+    }
+
+
     public Set<Client> getClients() {
         return clients;
     }
