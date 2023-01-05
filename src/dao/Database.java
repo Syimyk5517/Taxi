@@ -14,6 +14,11 @@ public class Database {
     private LinkedHashSet<Taxi> taxis = new LinkedHashSet<>();
 
 
+    public Database() {
+
+    }
+
+
     public Set<Client> getClients() {
         return clients;
     }

@@ -8,7 +8,7 @@ import java.util.Map;
 
 public interface TaxiService {
 
-    StringBuilder add(Taxi taxi);
+                   StringBuilder add(Taxi taxi);
                    StringBuilder add(List<Taxi> taxis);
                    List<Taxi> findByInitialLetter(String model);
                    Map<TaxiType, List<Taxi>> grouping();
