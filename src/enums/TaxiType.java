@@ -13,4 +13,12 @@ public enum TaxiType {
         this.pricePerKm = pricePerKm;
         this.priceForLanding = priceForLanding;
     }
+
+    public BigDecimal getPricePerKm() {
+        return pricePerKm;
+    }
+
+    public BigDecimal getPriceForLanding() {
+        return priceForLanding;
+    }
 }

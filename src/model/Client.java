@@ -1,5 +1,6 @@
 package model;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Client {
@@ -7,12 +8,14 @@ public class Client {
     private  String fullname;
     private LocalDate dateOfBirth;
     private  String phoneNumber;
+    private BigDecimal money;
 
-    public Client(Long id, String fullname, LocalDate dateOfBirth, String phoneNumber) {
+    public Client(Long id, String fullname, LocalDate dateOfBirth, String phoneNumber, BigDecimal money) {
         this.id = id;
         this.fullname = fullname;
         this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;
+        this.money = money;
     }
 
     public Long getId() {
@@ -47,6 +50,14 @@ public class Client {
         this.phoneNumber = phoneNumber;
     }
 
+    public BigDecimal getMoney() {
+        return money;
+    }
+
+    public void setMoney(BigDecimal money) {
+        this.money = money;
+    }
+
     @Override
     public String toString() {
         return "Client{" +
@@ -54,6 +65,7 @@ public class Client {
                 ", fullname='" + fullname + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", phoneNumber='" + phoneNumber + '\'' +
+                ", money=" + money +
                 '}';
     }
 }
