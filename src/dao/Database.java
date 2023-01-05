@@ -10,14 +10,9 @@ import java.util.Set;
 
 public class Database {
     private Set<Client> clients = new LinkedHashSet<>();
-    private Set<Driver> drivers = new HashSet<>();
+    private Set<Driver> drivers = new LinkedHashSet<>();
     private LinkedHashSet<Taxi> taxis = new LinkedHashSet<>();
 
-    public Database(Set<Client> clients, Set<Driver> drivers, LinkedHashSet<Taxi> taxis) {
-        this.clients = clients;
-        this.drivers = drivers;
-        this.taxis = taxis;
-    }
 
     public Set<Client> getClients() {
         return clients;
