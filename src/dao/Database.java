@@ -14,9 +14,7 @@ public class Database {
     private LinkedHashSet<Taxi> taxis = new LinkedHashSet<>();
 
 
-    public Database() {
-
-    }
+    public Database() {}
 
 
     public Set<Client> getClients() {
