@@ -1,5 +1,7 @@
 package model;
 
+import enums.Gender;
+
 import java.math.BigDecimal;
 
 public class Driver {
