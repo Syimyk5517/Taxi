@@ -18,6 +18,7 @@ public class Client {
         this.money = money;
     }
 
+
     public Long getId() {
         return id;
     }
