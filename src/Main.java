@@ -4,6 +4,9 @@ import model.Client;
 import model.Driver;
 import model.License;
 import model.Taxi;
+import implService.ClientServiceImpl;
+import  implService.DriverServiceImpl;
+import  implService.TaxiServiceImpl;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -13,6 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+
         System.out.println("TAXI");
 
         Client client = new Client(1L,"MAlikov Nurjigit", LocalDate.of(2001,10,21),"0505505505", BigDecimal.valueOf(15000));
@@ -20,11 +24,11 @@ public class Main {
         Client client2 = new Client(3L,"Akmatzhanov Zahid", LocalDate.of(2000,8,15),"0777777777", BigDecimal.valueOf(14000));
         Client client3 = new Client(4L,"Zhumabek uulu Syimyk", LocalDate.of(1997,11,1),"0778787878", BigDecimal.valueOf(20000));
         Client client4 = new Client(5L,"Nematila kyzy Saltanat", LocalDate.of(2004,10,28),"0555565758", BigDecimal.valueOf(12000));
-       List<Client> clientList = new  ArrayList<>();
-       clientList.add(client2);
-       clientList.add(client3);
-       clientList.add(client);
-       clientList.add(client4);
+        List<Client> clientList = new  ArrayList<>();
+        clientList.add(client2);
+        clientList.add(client3);
+        clientList.add(client);
+        clientList.add(client4);
         /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         License license = new License(667L,LocalDate.of(2014,4,4),LocalDate.of(2024,4,4));
         License license1 = new License(667L,LocalDate.of(2015,5,6),LocalDate.of(2025,5,6));
