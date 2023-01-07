@@ -54,9 +54,7 @@ public class Client {
         return money;
     }
 
-    public void setMoney(BigDecimal money) {
-        this.money = money;
-    }
+
 
     @Override
     public String toString() {
