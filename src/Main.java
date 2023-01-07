@@ -11,6 +11,10 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
+
+        System.out.println("TAXI");
+
         Client client = new Client(1L,"MAlikov Nurjigit", LocalDate.of(2001,10,21),"0505505505", BigDecimal.valueOf(15000));
         Client client1 = new Client(2L,"Samatova Aijan", LocalDate.of(1999,7,12),"0503500500", BigDecimal.valueOf(18000));
         Client client2 = new Client(3L,"Akmatzhanov Zahid", LocalDate.of(2000,8,15),"0777777777", BigDecimal.valueOf(14000));
